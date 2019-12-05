@@ -20,12 +20,14 @@ sudo apt-get install --yes code
 code --install-extension ms-iot.vscode-ros
 code --install-extension ms-python.python
 code --install-extension ms-vscode.cpptools
+code --install-extension twxs.cmake
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode-remote.remote-containers
-code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension dotjoshjohnson.xml
+code --install-extension davidanson.vscode-markdownlint
 ```
 
-Then launch VS Code, open the folder containing this repo, say yes to open remote container.
+Then launch VS Code, open the folder containing this repo, click on "Reopen in Container" button.
 
 If you run some code make sure to use `gui:=false` to prevent RQT, RViz, and Gazebo from running
 ```
