@@ -4,7 +4,7 @@ This repo lets you develop code for ROS Melodic in a docker container. Workspace
 This gives you a list of benefits:
 * Consistent and easily reproducible development environment and toolchain.
 * Host OS could be different from Ubuntu 18.04 Bionic Beaver.
-* No worrying about impacting your local setuo.
+* No worrying about impacting your local setup.
 
 ## Install Visual Studio Code from Microsoft repo
 ```
@@ -22,7 +22,9 @@ code --install-extension ms-vscode-remote.remote-containers
 
 Then launch VS Code, open the folder containing this repo, say yes to open remote container.
 
-If you run some code make sure to use `gui:=false` like this
-```roslaunch my_package run.launch gui:=false```
+If you run some code make sure to use `gui:=false` to prevent RQT, RViz, and Gazebo from running
+```
+roslaunch my_package run.launch gui:=false
+```
 
 Enjoy!
