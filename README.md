@@ -15,9 +15,14 @@ sudo apt-get update
 sudo apt-get install --yes code
 ```
 
-## Install remote development in a container extension
+## Install remote container development extensions
 ```
+code --install-extension ms-iot.vscode-ros
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode-remote.remote-containers
+code --install-extension DavidAnson.vscode-markdownlint
 ```
 
 Then launch VS Code, open the folder containing this repo, say yes to open remote container.
