@@ -20,4 +20,9 @@ sudo apt-get install --yes code
 code --install-extension ms-vscode-remote.remote-containers
 ```
 
-Then launch VS Code, open the folder containing this repo, say yes to open remote container. Enjoy.
+Then launch VS Code, open the folder containing this repo, say yes to open remote container.
+
+If you run some code make sure to use `gui:=false` like this
+```roslaunch my_package run.launch gui:=false```
+
+Enjoy!
